@@ -1,4 +1,4 @@
-##Welcome to Equivalent Exchange 3!
+## Welcome to Equivalent Exchange 3!
 **LATEST OFFICIAL VERSION**: [EE3 pre1h for 1.5.1/1.5.2](http://adf.ly/PdBNy)
 
 [Minecraft Forums page](http://www.minecraftforum.net/topic/1540010-equivalent-exchange-3)
@@ -9,7 +9,7 @@
 
 [FAQ](https://github.com/pahimar/Equivalent-Exchange-3/wiki/Frequently-Asked-Questions) - For those that have questions.
 
-###Compiling Equivalent Exchange 3
+### Compiling Equivalent Exchange 3
 IMPORTANT: Please report any issues you have, there might be some problems with the documentation!
 Also make sure you know EXACTLY what you're doing!  It's not any of our faults if your OS crashes, becomes corrupted, etc.
 ***
@@ -25,7 +25,7 @@ Also make sure you know EXACTLY what you're doing!  It's not any of our faults i
 
 [Updating Your Repository](#updating-your-repository)
 
-####Setup Java
+#### Setup Java
 The Java JDK is used to compile EE3.
 
 1. Download and install the Java JDK.
@@ -45,7 +45,7 @@ The Java JDK is used to compile EE3.
     * Append `;%JAVA_HOME%\bin` EXACTLY AS SHOWN and click `Ok`.  Make sure the location is correct; double-check just to make sure.
 3. Open up your command line and run `javac`.  If it spews out a bunch of possible options and the usage, then you're good to go.  If not, either try the steps again or check the [FAQ](https://github.com/pahimar/Equivalent-Exchange-3/wiki/Frequently-Asked-Questions).
 
-####Setup Gradle
+#### Setup Gradle
 Gradle is used to execute the various build tasks when compiling EE3.
 
 1. Download and install Gradle.
@@ -63,13 +63,13 @@ Gradle is used to execute the various build tasks when compiling EE3.
 	* Scroll down to `Path` again, and append `;%GRADLE_HOME%\bin` EXACTLY AS SHOWN and click `Ok`.  Once again, double-check the location.
 3. Open up your command line and run `gradle`.  If it says "Welcome to Gradle [version].", then you're good to go.  If not, either try the steps again or check the [FAQ](https://github.com/pahimar/Equivalent-Exchange-3/wiki/Frequently-Asked-Questions).
 
-####Setup Git
+#### Setup Git
 Git is used to clone EE3 and update your local copy.
 
 1. Download and install Git [here](http://git-scm.com/download/).
 2. *Optional*: Download and install a Git GUI client, such as Github for Windows/Mac, SmartGitHg, TortoiseGit, etc.  A nice list is available [here](http://git-scm.com/downloads/guis).
 
-####Setup EE3
+#### Setup EE3
 This section assumes that you're using the command-line version of Git.
 
 1. Open up your command line.
@@ -83,7 +83,7 @@ This section assumes that you're using the command-line version of Git.
 		\-EE3's files (should have `build.gradle`)
 ***
 
-####Compile EE3
+#### Compile EE3
 1. Execute `gradle setupDevWorkspace`. This sets up Forge and downloads the necessary libraries to build EE3.  This might take some time, be patient.
 	* You will generally only have to do this once until the Forge version in `build.properties` changes.
 2. Execute `gradle build`. If you did everything right, `BUILD SUCCESSFUL` will be displayed after it finishes.  This should be relatively quick.
@@ -92,7 +92,7 @@ This section assumes that you're using the command-line version of Git.
     *  You should see a `.jar` file named `EquivalentExchange3-0.0.#.jar`, where # is the `build_number` value in `build.properties`.
 4. Copy the jar into your Minecraft mods folder, and you are done!
 
-####Updating Your Repository
+#### Updating Your Repository
 In order to get the most up-to-date builds, you'll have to periodically update your local repository.
 
 1. Open up your command line.
@@ -101,9 +101,9 @@ In order to get the most up-to-date builds, you'll have to periodically update y
 	* If you have, try reverting them to the status that they were when you last updated your repository.
 4. Execute `git pull master`.  This pulls all commits from the official repository that do not yet exist on your local repository and updates it.
 
-###Contributing
+### Contributing
 ***
-####Submitting a PR
+#### Submitting a PR
 So you found a bug in pahimar's code?  Think you can make it more efficient?  Want to help in general?  Great!
 
 1. If you haven't already, create a Github account.
@@ -114,7 +114,7 @@ So you found a bug in pahimar's code?  Think you can make it more efficient?  Wa
 5. Click `Click to create a pull request for this comparison`, enter your PR's title, and create a detailed description telling pahimar what you changed.
 6. Click `Send pull request`, and wait for feedback!
 
-####Creating an Issue
+#### Creating an Issue
 EE3 crashes every time?  Have a suggestion?  Found a bug?  Create an issue now!
 
 1. Make sure your issue hasn't already been answered or fixed.  Also think about whether your issue is a valid one before submitting it.
